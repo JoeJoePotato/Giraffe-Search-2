@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7680b341-04af-42f0-9286-236671b39bcc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/demo 2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/demo 2/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo 2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo 2/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="7680b341-04af-42f0-9286-236671b39bcc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
