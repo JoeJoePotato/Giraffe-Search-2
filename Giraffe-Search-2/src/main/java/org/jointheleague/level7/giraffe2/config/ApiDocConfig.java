@@ -1,4 +1,4 @@
-package resources;
+package org.jointheleague.level7.giraffe2.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
