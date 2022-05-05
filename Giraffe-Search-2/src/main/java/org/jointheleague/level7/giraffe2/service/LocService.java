@@ -1,7 +1,6 @@
 package org.jointheleague.level7.giraffe2.service;
 
-
-import com.example.repository.LocRepository;
+import org.jointheleague.level7.giraffe2.repository.LocRepository;
 import org.springframework.stereotype.Service;
 
 @Service
