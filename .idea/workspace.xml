@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7680b341-04af-42f0-9286-236671b39bcc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/test/java/com/example/demo/HomeControllerTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
