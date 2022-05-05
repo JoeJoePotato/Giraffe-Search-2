@@ -25,7 +25,7 @@ public class LocController {
             @ApiResponse(code = 404, message = "Result(s) not found")
     })
     public String getResults(@RequestParam(value="q") String query){
-        return "Searching for books related to " + query;
+        return locService.getResults(query);
     }
 
 
