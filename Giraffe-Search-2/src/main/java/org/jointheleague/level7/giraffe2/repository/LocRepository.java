@@ -8,7 +8,7 @@ public class LocRepository {
 
     private final WebClient webClient;
 
-    private static final String baseUrl = "https://www.loc.gov/books";
+    private static final String baseUrl = "https://www.dnd5eapi.co/api/spells/";
 
     public LocRepository() {
         webClient = WebClient
@@ -24,8 +24,7 @@ public class LocRepository {
                         .queryParam("at", "results")
                         .queryParam("q", query)
                         .build()
-                )
-                .retrieve()
+                ).retrieve()
                 .bodyToMono(String.class)
                 .block();
     }
