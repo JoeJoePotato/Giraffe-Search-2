@@ -18,11 +18,10 @@ public class LocRepository {
     }
 
     public String getResults(String query) {
+        String modified = query.trim().replace(' ', '-');
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
-                        .queryParam("fo", "json")
-                        .queryParam("at", "results")
-                        .queryParam("q", query)
+                        .path(modified)
                         .build()
                 ).retrieve()
                 .bodyToMono(String.class)
