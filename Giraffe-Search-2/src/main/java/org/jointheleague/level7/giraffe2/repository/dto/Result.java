@@ -65,6 +65,12 @@ public class Result {
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
+  //custom variables
+    private String title;
+    private String subtitle;
+    private String bodyText;
+
+
     @JsonProperty("name")
     public String getName() {
         return name;
@@ -223,6 +229,23 @@ public class Result {
     @JsonAnySetter
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
+    }
+
+    //custom methods
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    public String getTitle() {
+        return "fix temporarily";
+    }
+
+    public void setSubtitle(String subtitle) {
+        this.subtitle = subtitle;
+    }
+
+
+    public void setBodyText(String bodyText) {
+        this.bodyText = bodyText;
     }
 
 }
