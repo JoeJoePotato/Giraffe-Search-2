@@ -1,4 +1,4 @@
-package org.jointheleague.level7.cheetah.service;
+package org.jointheleague.level7.giraffe2.service;
 
 import org.jointheleague.level7.giraffe2.repository.LocRepository;
 import org.jointheleague.level7.giraffe2.repository.dto.Result;
