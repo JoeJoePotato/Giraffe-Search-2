@@ -236,11 +236,23 @@ public class Result {
         this.title = title;
     }
     public String getTitle() {
-        return "fix temporarily";
+        return getName();
     }
 
     public void setSubtitle(String subtitle) {
-        this.subtitle = subtitle;
+       String sub="";
+       int l=getLevel();
+
+       sub+=i;
+       if(i==1) {
+         sub+="st";
+       }else if(i==2){
+           sub+="nd";
+       }else if(i==3){
+           sub+="rd";
+       }else{
+           sub+="th";
+       }
     }
 
 
