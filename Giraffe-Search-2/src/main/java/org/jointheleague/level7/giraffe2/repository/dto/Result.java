@@ -241,7 +241,7 @@ public class Result {
 
     public void setSubtitle(String subtitle) {
        String sub="";
-       int l=getLevel();
+       int i=getLevel();
 
        sub+=i;
        if(i==1) {
@@ -253,11 +253,34 @@ public class Result {
        }else{
            sub+="th";
        }
+       sub+=" Level";
+       sub+=getSchool().getName();
+
+       sub+="\n Components: ";
+       for(int j=0; j<getComponents().size(); j++){
+           sub+=getComponents().get(j)+" ";
+       }
+       if(getComponents().contains("M")){
+           sub+=getMaterial()+" ";
+       }
+
+        if(getRange() != null){
+            sub+="\n Range: "+getRange();
+        }
+
+        if(getRitual()==true){
+           sub+="\n (Can be cast as a Ritual)";
+       }
+
+
     }
 
 
     public void setBodyText(String bodyText) {
-        this.bodyText = bodyText;
+        String bod="";
+        for(int j=0; j<getDesc().size(); j++){
+            bod+=getDesc().get(j)+"\n";
+        }
     }
 
 }
