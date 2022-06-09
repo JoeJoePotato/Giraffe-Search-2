@@ -1,5 +1,7 @@
 package org.jointheleague.level7.giraffe2.repository;
 
+import org.jointheleague.level7.giraffe2.repository.dto.LocResponse;
+import org.jointheleague.level7.giraffe2.repository.dto.Result;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -19,22 +21,15 @@ public class LocRepository {
                 .build();
     }
 
-    public String getResults(String query) {
-<<<<<<< Updated upstream
-        String modified = query.trim().replace(' ', '-');
-        return webClient.get()
-                .uri(uriBuilder -> uriBuilder
-                        .path(modified)
-=======
+    public Result getResults(String query) {
         String tempMod = query.toLowerCase(Locale.ROOT).trim().replace(" ", "-");
         System.out.println(baseUrl + "" + tempMod);
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .query("spells/" + tempMod)
->>>>>>> Stashed changes
                         .build()
                 ).retrieve()
-                .bodyToMono(String.class)
+                .bodyToMono(Result.class)
                 .block();
     }
 

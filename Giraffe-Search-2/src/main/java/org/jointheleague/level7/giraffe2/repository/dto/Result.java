@@ -65,7 +65,7 @@ public class Result {
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-  //custom variables
+    //custom variables
     private String title;
     private String subtitle;
     private String bodyText;
@@ -239,48 +239,57 @@ public class Result {
         return getName();
     }
 
-    public void setSubtitle(String subtitle) {
-       String sub="";
-       int i=getLevel();
+    public String setSubtitle() {
+        String sub="";
+        int i=getLevel();
 
-       sub+=i;
-       if(i==1) {
-         sub+="st";
-       }else if(i==2){
-           sub+="nd";
-       }else if(i==3){
-           sub+="rd";
-       }else{
-           sub+="th";
-       }
-       sub+=" Level";
-       sub+=getSchool().getName();
+        sub+=i;
+        if(i==1) {
+            sub+="st";
+        }else if(i==2){
+            sub+="nd";
+        }else if(i==3){
+            sub+="rd";
+        }else{
+            sub+="th";
+        }
+        sub+=" Level";
+        sub+=getSchool().getName();
 
-       sub+="\n Components: ";
-       for(int j=0; j<getComponents().size(); j++){
-           sub+=getComponents().get(j)+" ";
-       }
-       if(getComponents().contains("M")){
-           sub+=getMaterial()+" ";
-       }
+        sub+="\n Components: ";
+        for(int j=0; j<getComponents().size(); j++){
+            sub+=getComponents().get(j)+" ";
+        }
+        if(getComponents().contains("M")){
+            sub+=getMaterial()+" ";
+        }
 
         if(getRange() != null){
             sub+="\n Range: "+getRange();
         }
 
         if(getRitual()==true){
-           sub+="\n (Can be cast as a Ritual)";
-       }
+            sub+="\n (Can be cast as a Ritual)";
+        }
 
-
+        return sub;
     }
 
 
-    public void setBodyText(String bodyText) {
+    public String getBodyText() {
         String bod="";
         for(int j=0; j<getDesc().size(); j++){
             bod+=getDesc().get(j)+"\n";
         }
+        return bod;
+    }
+
+    public Result compileFinalResult() {
+        Result result = new Result();
+        result.setTitle(name);
+        result.setSubtitle();
+        result.getBodyText();
+        return result;
     }
 
 }

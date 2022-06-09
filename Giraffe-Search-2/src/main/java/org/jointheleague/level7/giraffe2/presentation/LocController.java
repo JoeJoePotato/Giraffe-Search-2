@@ -6,6 +6,7 @@ import org.jointheleague.level7.giraffe2.service.LocService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.jointheleague.level7.giraffe2.repository.dto.Result;
 
 @RestController
 public class LocController {
@@ -24,7 +25,7 @@ public class LocController {
             @ApiResponse(code = 200, message = "Result(s) found"),
             @ApiResponse(code = 404, message = "Result(s) not found")
     })
-    public String getResults(@RequestParam(value="q") String query){
+    public Result getResults(@RequestParam(value="q") String query){
         return locService.getResults(query);
     }
 
