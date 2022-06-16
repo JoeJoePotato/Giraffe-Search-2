@@ -10,6 +10,7 @@ sourceCompatibility = '11'
 
 repositories {
 	jcenter()
+	mavenCentral()
 }
 
 dependencies {
@@ -17,10 +18,13 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'io.springfox:springfox-swagger2:2.9.2'
 	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
-	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+    implementation 'com.google.code.gson:gson:2.9.0'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 	testImplementation 'io.projectreactor:reactor-test'
+	implementation group: 'org.json', name: 'json', version: '20090211'
+	implementation 'javax.json:javax.json-api:1.0'
 }
 
 test {

@@ -21,15 +21,16 @@ public class LocRepository {
                 .build();
     }
 
-    public Result getResults(String query) {
+    public String getResults(String query) {
         String tempMod = query.toLowerCase(Locale.ROOT).trim().replace(" ", "-");
-        System.out.println(baseUrl + "" + tempMod);
+        String extra = baseUrl + "spells/" + tempMod;
+        System.out.println(baseUrl + extra);
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
-                        .query("spells/" + tempMod)
+                        .query(extra)
                         .build()
                 ).retrieve()
-                .bodyToMono(Result.class)
+                .bodyToMono(String.class)
                 .block();
     }
 

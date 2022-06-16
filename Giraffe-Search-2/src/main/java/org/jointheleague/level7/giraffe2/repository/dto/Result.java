@@ -10,6 +10,10 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
+
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -26,8 +30,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "level",
         "attack_type",
         "damage",
-        "school",
-        "classes"
+        "school"
 })
 @Generated("jsonschema2pojo")
 public class Result {
@@ -60,15 +63,14 @@ public class Result {
     private Damage damage;
     @JsonProperty("school")
     private School school;
-    @JsonProperty("classes")
-    private List<Class> classes = null;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     //custom variables
-    private String title;
-    private String subtitle;
-    private String bodyText;
+//    syso'd because not needed?
+//    private String title;
+//    private String subtitle;
+//    private String bodyText;
 
 
     @JsonProperty("name")
@@ -211,16 +213,6 @@ public class Result {
         this.school = school;
     }
 
-    @JsonProperty("classes")
-    public List<Class> getClasses() {
-        return classes;
-    }
-
-    @JsonProperty("classes")
-    public void setClasses(List<Class> classes) {
-        this.classes = classes;
-    }
-
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -232,14 +224,11 @@ public class Result {
     }
 
     //custom methods
-    public void setTitle(String title) {
-        this.title = title;
-    }
     public String getTitle() {
         return getName();
     }
 
-    public String setSubtitle() {
+    public String compileSubtitle() {
         String sub="";
         int i=getLevel();
 
@@ -285,10 +274,18 @@ public class Result {
     }
 
     public Result compileFinalResult() {
+        Gson gson = new Gson();
+
+
+//        JsonObject jsonObject = new Gson().toJson(, JsonObject. class);
+
         Result result = new Result();
-        result.setTitle(name);
-        result.setSubtitle();
+        result.getTitle();
+        result.compileSubtitle();
         result.getBodyText();
+
+        String json = gson.toJson(result);
+
         return result;
     }
 
