@@ -12,7 +12,7 @@ public class LocRepository {
 
     private final WebClient webClient;
 
-    private static final String baseUrl = "https://www.dnd5eapi.co/api/";
+    private static final String baseUrl = "https://www.dnd5eapi.co/api";
 
     public LocRepository() {
         webClient = WebClient
@@ -21,17 +21,18 @@ public class LocRepository {
                 .build();
     }
 
-    public String getResults(String query) {
+    public Result getResults(String query) {
         String tempMod = query.toLowerCase(Locale.ROOT).trim().replace(" ", "-");
-        String extra = baseUrl + "spells/" + tempMod;
-        System.out.println(baseUrl + extra);
+        String extra = "/spells/" + tempMod;
+        System.out.println(extra);
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
-                        .query(extra)
+                        .path(extra)
                         .build()
                 ).retrieve()
-                .bodyToMono(String.class)
-                .block();
+                .bodyToMono(Result.class)
+                .block()
+                .compileFinalResult();
     }
 
 }

@@ -13,7 +13,7 @@ public class LocService {
         this.locRepository = locRepository;
     }
 
-    public String getResults(String query){
+    public Result getResults(String query){
         return locRepository.getResults(query);
     }
 
