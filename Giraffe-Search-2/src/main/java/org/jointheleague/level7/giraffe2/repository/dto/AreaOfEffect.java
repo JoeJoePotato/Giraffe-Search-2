@@ -1,9 +1,5 @@
-<<<<<<< Updated upstream
-package org.jointheleague.level7.giraffe2.repository.dto;
-=======
 
 package org.jointheleague.api.giraffe.Giraffe.Search.repository.dto;
->>>>>>> Stashed changes
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,56 +13,37 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-<<<<<<< Updated upstream
-        "index",
-        "name",
-        "url"
-=======
-    "index",
-    "name",
-    "url"
->>>>>>> Stashed changes
+    "type",
+    "size"
 })
 @Generated("jsonschema2pojo")
-public class DamageType {
+public class AreaOfEffect {
 
-    @JsonProperty("index")
-    private String index;
-    @JsonProperty("name")
-    private String name;
-    @JsonProperty("url")
-    private String url;
+    @JsonProperty("type")
+    private String type;
+    @JsonProperty("size")
+    private Integer size;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    @JsonProperty("index")
-    public String getIndex() {
-        return index;
+    @JsonProperty("type")
+    public String getType() {
+        return type;
     }
 
-    @JsonProperty("index")
-    public void setIndex(String index) {
-        this.index = index;
+    @JsonProperty("type")
+    public void setType(String type) {
+        this.type = type;
     }
 
-    @JsonProperty("name")
-    public String getName() {
-        return name;
+    @JsonProperty("size")
+    public Integer getSize() {
+        return size;
     }
 
-    @JsonProperty("name")
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @JsonProperty("url")
-    public String getUrl() {
-        return url;
-    }
-
-    @JsonProperty("url")
-    public void setUrl(String url) {
-        this.url = url;
+    @JsonProperty("size")
+    public void setSize(Integer size) {
+        this.size = size;
     }
 
     @JsonAnyGetter

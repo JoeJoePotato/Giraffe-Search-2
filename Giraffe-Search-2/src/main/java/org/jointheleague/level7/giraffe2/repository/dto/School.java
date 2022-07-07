@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
 package org.jointheleague.level7.giraffe2.repository.dto;
+=======
+
+package org.jointheleague.api.giraffe.Giraffe.Search.repository.dto;
+>>>>>>> Stashed changes
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,9 +17,15 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+<<<<<<< Updated upstream
         "index",
         "name",
         "url"
+=======
+    "index",
+    "name",
+    "url"
+>>>>>>> Stashed changes
 })
 @Generated("jsonschema2pojo")
 public class School {

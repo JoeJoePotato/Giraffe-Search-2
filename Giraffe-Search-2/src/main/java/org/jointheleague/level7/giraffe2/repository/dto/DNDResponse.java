@@ -1,4 +1,5 @@
-package org.jointheleague.level7.giraffe2.repository.dto;
+
+package org.jointheleague.api.giraffe.Giraffe.Search.repository.dto;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,6 +14,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+<<<<<<< Updated upstream:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Result.java
         "name",
         "desc",
         "higher_level",
@@ -28,10 +30,36 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "damage",
         "school",
         "classes"
+=======
+    "_id",
+    "index",
+    "name",
+    "desc",
+    "higher_level",
+    "range",
+    "components",
+    "material",
+    "ritual",
+    "duration",
+    "concentration",
+    "casting_time",
+    "level",
+    "damage",
+    "dc",
+    "area_of_effect",
+    "school",
+    "classes",
+    "subclasses",
+    "url"
+>>>>>>> Stashed changes:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DNDResponse.java
 })
 @Generated("jsonschema2pojo")
-public class Result {
+public class DNDResponse {
 
+    @JsonProperty("_id")
+    private String id;
+    @JsonProperty("index")
+    private String index;
     @JsonProperty("name")
     private String name;
     @JsonProperty("desc")
@@ -54,14 +82,17 @@ public class Result {
     private String castingTime;
     @JsonProperty("level")
     private Integer level;
-    @JsonProperty("attack_type")
-    private String attackType;
     @JsonProperty("damage")
     private Damage damage;
+    @JsonProperty("dc")
+    private Dc dc;
+    @JsonProperty("area_of_effect")
+    private AreaOfEffect areaOfEffect;
     @JsonProperty("school")
     private School school;
     @JsonProperty("classes")
     private List<Class> classes = null;
+<<<<<<< Updated upstream:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Result.java
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -69,7 +100,34 @@ public class Result {
     private String title;
     private String subtitle;
     private String bodyText;
+=======
+    @JsonProperty("subclasses")
+    private List<Subclass> subclasses = null;
+    @JsonProperty("url")
+    private String url;
+    @JsonIgnore
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
+    @JsonProperty("_id")
+    public String getId() {
+        return id;
+    }
+
+    @JsonProperty("_id")
+    public void setId(String id) {
+        this.id = id;
+    }
+>>>>>>> Stashed changes:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DNDResponse.java
+
+    @JsonProperty("index")
+    public String getIndex() {
+        return index;
+    }
+
+    @JsonProperty("index")
+    public void setIndex(String index) {
+        this.index = index;
+    }
 
     @JsonProperty("name")
     public String getName() {
@@ -181,16 +239,6 @@ public class Result {
         this.level = level;
     }
 
-    @JsonProperty("attack_type")
-    public String getAttackType() {
-        return attackType;
-    }
-
-    @JsonProperty("attack_type")
-    public void setAttackType(String attackType) {
-        this.attackType = attackType;
-    }
-
     @JsonProperty("damage")
     public Damage getDamage() {
         return damage;
@@ -199,6 +247,26 @@ public class Result {
     @JsonProperty("damage")
     public void setDamage(Damage damage) {
         this.damage = damage;
+    }
+
+    @JsonProperty("dc")
+    public Dc getDc() {
+        return dc;
+    }
+
+    @JsonProperty("dc")
+    public void setDc(Dc dc) {
+        this.dc = dc;
+    }
+
+    @JsonProperty("area_of_effect")
+    public AreaOfEffect getAreaOfEffect() {
+        return areaOfEffect;
+    }
+
+    @JsonProperty("area_of_effect")
+    public void setAreaOfEffect(AreaOfEffect areaOfEffect) {
+        this.areaOfEffect = areaOfEffect;
     }
 
     @JsonProperty("school")
@@ -214,6 +282,7 @@ public class Result {
     @JsonProperty("classes")
     public List<Class> getClasses() {
         return classes;
+<<<<<<< Updated upstream:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Result.java
     }
 
     @JsonProperty("classes")
@@ -224,13 +293,16 @@ public class Result {
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
+=======
+>>>>>>> Stashed changes:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DNDResponse.java
     }
 
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
+    @JsonProperty("classes")
+    public void setClasses(List<Class> classes) {
+        this.classes = classes;
     }
 
+<<<<<<< Updated upstream:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Result.java
     //custom methods
     public void setTitle(String title) {
         this.title = title;
@@ -273,23 +345,45 @@ public class Result {
        }
 
         return sub;
+=======
+    @JsonProperty("subclasses")
+    public List<Subclass> getSubclasses() {
+        return subclasses;
     }
 
-
-    public String getBodyText() {
-        String bod="";
-        for(int j=0; j<getDesc().size(); j++){
-            bod+=getDesc().get(j)+"\n";
-        }
-        return bod;
+    @JsonProperty("subclasses")
+    public void setSubclasses(List<Subclass> subclasses) {
+        this.subclasses = subclasses;
+>>>>>>> Stashed changes:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DNDResponse.java
     }
 
+    @JsonProperty("url")
+    public String getUrl() {
+        return url;
+    }
+
+<<<<<<< Updated upstream:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Result.java
     public Result compileFinalResult() {
         Result result = new Result();
         result.setTitle(name);
         result.setSubtitle();
         result.getBodyText();
         return result;
+=======
+    @JsonProperty("url")
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    @JsonAnyGetter
+    public Map<String, Object> getAdditionalProperties() {
+        return this.additionalProperties;
+    }
+
+    @JsonAnySetter
+    public void setAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
+>>>>>>> Stashed changes:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DNDResponse.java
     }
 
 }

@@ -9,11 +9,18 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import org.jointheleague.api.giraffe.Giraffe.Search.repository.dto.DamageType;
+import org.jointheleague.api.giraffe.Giraffe.Search.repository.dto.DamageAtSlotLevel;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+<<<<<<< Updated upstream
         "damage_type",
         "damage_at_slot_level"
+=======
+    "damage_type",
+    "damage_at_slot_level"
+>>>>>>> Stashed changes
 })
 @Generated("jsonschema2pojo")
 public class Damage {
