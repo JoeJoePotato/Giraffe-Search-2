@@ -1,9 +1,4 @@
-<<<<<<< Updated upstream
 package org.jointheleague.level7.giraffe2.repository.dto;
-=======
-
-package org.jointheleague.api.giraffe.Giraffe.Search.repository.dto;
->>>>>>> Stashed changes
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,7 +12,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-<<<<<<< Updated upstream
         "2",
         "3",
         "4",
@@ -26,24 +20,12 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "7",
         "8",
         "9"
-=======
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9"
->>>>>>> Stashed changes
 })
 @Generated("jsonschema2pojo")
 public class DamageAtSlotLevel {
 
-<<<<<<< Updated upstream
     @JsonProperty("2")
     private String _2;
-=======
->>>>>>> Stashed changes
     @JsonProperty("3")
     private String _3;
     @JsonProperty("4")
@@ -61,7 +43,6 @@ public class DamageAtSlotLevel {
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-<<<<<<< Updated upstream
     @JsonProperty("2")
     public String get2() {
         return _2;
@@ -71,9 +52,6 @@ public class DamageAtSlotLevel {
     public void set2(String _2) {
         this._2 = _2;
     }
-
-=======
->>>>>>> Stashed changes
     @JsonProperty("3")
     public String get3() {
         return _3;
@@ -154,8 +132,4 @@ public class DamageAtSlotLevel {
         this.additionalProperties.put(name, value);
     }
 
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes

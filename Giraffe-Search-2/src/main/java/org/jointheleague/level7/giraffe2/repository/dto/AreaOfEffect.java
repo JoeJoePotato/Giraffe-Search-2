@@ -1,5 +1,5 @@
 
-package org.jointheleague.api.giraffe.Giraffe.Search.repository.dto;
+package org.jointheleague.level7.giraffe2.repository.dto;
 
 import java.util.HashMap;
 import java.util.Map;

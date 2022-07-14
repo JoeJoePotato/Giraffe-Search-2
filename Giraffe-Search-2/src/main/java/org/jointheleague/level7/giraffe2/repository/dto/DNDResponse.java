@@ -1,5 +1,5 @@
 
-package org.jointheleague.api.giraffe.Giraffe.Search.repository.dto;
+package org.jointheleague.level7.giraffe2.repository.dto;
 
 import java.util.HashMap;
 import java.util.List;
@@ -11,10 +11,11 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import org.jointheleague.level7.giraffe2.repository.dto.Dc;
+import org.jointheleague.level7.giraffe2.repository.dto.Damage;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-<<<<<<< Updated upstream:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Result.java
         "name",
         "desc",
         "higher_level",
@@ -30,28 +31,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "damage",
         "school",
         "classes"
-=======
-    "_id",
-    "index",
-    "name",
-    "desc",
-    "higher_level",
-    "range",
-    "components",
-    "material",
-    "ritual",
-    "duration",
-    "concentration",
-    "casting_time",
-    "level",
-    "damage",
-    "dc",
-    "area_of_effect",
-    "school",
-    "classes",
-    "subclasses",
-    "url"
->>>>>>> Stashed changes:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DNDResponse.java
 })
 @Generated("jsonschema2pojo")
 public class DNDResponse {
@@ -92,21 +71,20 @@ public class DNDResponse {
     private School school;
     @JsonProperty("classes")
     private List<Class> classes = null;
-<<<<<<< Updated upstream:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Result.java
+
+
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-  //custom variables
+    //custom variables
     private String title;
     private String subtitle;
     private String bodyText;
-=======
+
     @JsonProperty("subclasses")
     private List<Subclass> subclasses = null;
     @JsonProperty("url")
     private String url;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     @JsonProperty("_id")
     public String getId() {
@@ -117,7 +95,6 @@ public class DNDResponse {
     public void setId(String id) {
         this.id = id;
     }
->>>>>>> Stashed changes:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DNDResponse.java
 
     @JsonProperty("index")
     public String getIndex() {
@@ -279,73 +256,6 @@ public class DNDResponse {
         this.school = school;
     }
 
-    @JsonProperty("classes")
-    public List<Class> getClasses() {
-        return classes;
-<<<<<<< Updated upstream:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Result.java
-    }
-
-    @JsonProperty("classes")
-    public void setClasses(List<Class> classes) {
-        this.classes = classes;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-=======
->>>>>>> Stashed changes:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DNDResponse.java
-    }
-
-    @JsonProperty("classes")
-    public void setClasses(List<Class> classes) {
-        this.classes = classes;
-    }
-
-<<<<<<< Updated upstream:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Result.java
-    //custom methods
-    public void setTitle(String title) {
-        this.title = title;
-    }
-    public String getTitle() {
-        return getName();
-    }
-
-    public String setSubtitle() {
-       String sub="";
-       int i=getLevel();
-
-       sub+=i;
-       if(i==1) {
-         sub+="st";
-       }else if(i==2){
-           sub+="nd";
-       }else if(i==3){
-           sub+="rd";
-       }else{
-           sub+="th";
-       }
-       sub+=" Level";
-       sub+=getSchool().getName();
-
-       sub+="\n Components: ";
-       for(int j=0; j<getComponents().size(); j++){
-           sub+=getComponents().get(j)+" ";
-       }
-       if(getComponents().contains("M")){
-           sub+=getMaterial()+" ";
-       }
-
-        if(getRange() != null){
-            sub+="\n Range: "+getRange();
-        }
-
-        if(getRitual()==true){
-           sub+="\n (Can be cast as a Ritual)";
-       }
-
-        return sub;
-=======
     @JsonProperty("subclasses")
     public List<Subclass> getSubclasses() {
         return subclasses;
@@ -354,7 +264,16 @@ public class DNDResponse {
     @JsonProperty("subclasses")
     public void setSubclasses(List<Subclass> subclasses) {
         this.subclasses = subclasses;
->>>>>>> Stashed changes:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DNDResponse.java
+    }
+
+    @JsonProperty("classes")
+    public List<Class> getClasses() {
+        return classes;
+    }
+
+    @JsonProperty("classes")
+    public void setClasses(List<Class> classes) {
+        this.classes = classes;
     }
 
     @JsonProperty("url")
@@ -362,28 +281,18 @@ public class DNDResponse {
         return url;
     }
 
-<<<<<<< Updated upstream:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Result.java
-    public Result compileFinalResult() {
-        Result result = new Result();
-        result.setTitle(name);
-        result.setSubtitle();
-        result.getBodyText();
-        return result;
-=======
     @JsonProperty("url")
-    public void setUrl(String url) {
+    public void setUrl (String url){
         this.url = url;
     }
 
     @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
+    public Map<String, Object> getAdditionalProperties () {
         return this.additionalProperties;
     }
 
     @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
+    public void setAdditionalProperty (String name, Object value){
         this.additionalProperties.put(name, value);
->>>>>>> Stashed changes:Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DNDResponse.java
     }
-
 }

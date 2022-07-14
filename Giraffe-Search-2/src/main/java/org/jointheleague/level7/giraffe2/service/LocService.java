@@ -2,11 +2,8 @@ package org.jointheleague.level7.giraffe2.service;
 
 import org.jointheleague.level7.giraffe2.domain.Pojo;
 import org.jointheleague.level7.giraffe2.repository.LocRepository;
-<<<<<<< Updated upstream
-import org.jointheleague.level7.giraffe2.repository.dto.Result;
-=======
 import org.jointheleague.level7.giraffe2.repository.dto.LocResponse;
->>>>>>> Stashed changes
+
 import org.springframework.stereotype.Service;
 
 @Service
