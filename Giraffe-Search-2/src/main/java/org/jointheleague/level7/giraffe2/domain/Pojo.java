@@ -11,12 +11,21 @@ public class Pojo {
     String subtitle;
     String bodyText;
 
+    @Override
+    public String toString() {
+        return "Pojo{" +
+                "title='" + title + '\'' +
+                ", subtitle='" + subtitle + '\'' +
+                ", bodyText='" + bodyText + '\'' +
+                '}';
+    }
 
     public Pojo(LocResponse response) {
         List<DNDResponse> result = response.getResults();
         title = compileTitle(result.get(0));
         subtitle = compileSubtitle(result.get(0));
         bodyText = compileBodyText(result.get(0));
+        System.out.println(toString());
     }
 
     public String compileTitle(DNDResponse result) {
