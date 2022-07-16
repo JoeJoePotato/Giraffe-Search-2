@@ -21,10 +21,10 @@ public class Pojo {
     }
 
     public Pojo(LocResponse response) {
-        List<DNDResponse> result = response.getResults();
-        title = compileTitle(result.get(0));
-        subtitle = compileSubtitle(result.get(0));
-        bodyText = compileBodyText(result.get(0));
+     DNDResponse result = response.getResults();
+        title = compileTitle(result);
+        subtitle = compileSubtitle(result);
+        bodyText = compileBodyText(result);
         System.out.println(toString());
     }
 

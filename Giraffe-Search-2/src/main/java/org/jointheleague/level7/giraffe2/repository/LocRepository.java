@@ -25,7 +25,7 @@ public class LocRepository {
         String tempMod = query.toLowerCase(Locale.ROOT).trim().replace(" ", "-");
         String extra = tempMod;
         System.out.println(baseUrl + extra);
-        return webClient.get()
+        LocResponse r= webClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(extra)
                         .build()
@@ -33,6 +33,8 @@ public class LocRepository {
                 .retrieve()
                 .bodyToMono(LocResponse.class)
                 .block();
+        System.out.println(r.toString());
+        return r;
     }
 
 }

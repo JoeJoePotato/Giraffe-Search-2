@@ -13,15 +13,16 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 public class LocResponse {
 
-    private List<DNDResponse> results = null;
+@JsonProperty("results")
+    private DNDResponse results;
 
     @JsonProperty("results")
-    public List<DNDResponse> getResults() {
+    public DNDResponse getResults() {
         return results;
     }
 
     @JsonProperty("results")
-    public void setResults(List<DNDResponse> results) {
+    public void setResults(DNDResponse results) {
         this.results = results;
     }
 

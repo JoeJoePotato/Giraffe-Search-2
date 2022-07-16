@@ -4,56 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7680b341-04af-42f0-9286-236671b39bcc" name="Changes" comment="">
-<<<<<<< Updated upstream
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/demo 2/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/demo 2/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/demo 2/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/demo 2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/demo 2/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/demo 2/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/demo 2/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/demo 2/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/demo 2/src/main/java/com/example/presentation/LocController.Java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/demo 2/src/main/java/com/example/service/LocService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/demo 2/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/demo 2/src/test/java/com/example/demo/DemoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/domain/Pojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/AreaOfEffect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Class.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DamageAtSlotLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Dc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DcType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Subclass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Giraffe-Search-2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Giraffe-Search-2.iml" afterDir="false" />
+    <list default="true" id="39518dca-b862-4c16-ba00-f3cb90396eee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/presentation/LocController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/presentation/LocController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/domain/Pojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/domain/Pojo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/LocRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/LocRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Damage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Damage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DamageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DamageType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/LocResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/LocResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/DNDResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/School.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/service/LocService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/service/LocService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/resources/application.yml" afterDir="false" />
->>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +102,20 @@
       <recent name="$PROJECT_DIR$/Giraffe-Search-2/src/java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.GiraffeSearchApplication">
+    <configuration name="GiraffeSearchApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.jointheleague.level7.giraffe2.GiraffeSearchApplication" />
+      <module name="demo.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.jointheleague.level7.giraffe2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Giraffe-Search-2 [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -163,11 +138,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.GiraffeSearchApplication" />
       <item itemvalue="Gradle.Giraffe-Search-2 [dependencies]" />
+      <item itemvalue="Application.GiraffeSearchApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GiraffeSearchApplication" />
         <item itemvalue="Gradle.Giraffe-Search-2 [dependencies]" />
       </list>
     </recent_temporary>
@@ -205,6 +181,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

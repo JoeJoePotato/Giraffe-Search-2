@@ -17,7 +17,7 @@ public class LocService {
 
     public Pojo getResults(String query){
         LocResponse response = locRepository.getResults(query);
-        System.out.println(response);
+        System.out.println(response.getResults());
         return new Pojo (response);
     }
 
