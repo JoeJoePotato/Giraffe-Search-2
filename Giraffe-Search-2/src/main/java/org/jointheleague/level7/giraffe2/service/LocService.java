@@ -1,8 +1,10 @@
 package org.jointheleague.level7.giraffe2.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import org.jointheleague.level7.giraffe2.domain.Pojo;
 import org.jointheleague.level7.giraffe2.repository.LocRepository;
 import org.jointheleague.level7.giraffe2.repository.dto.LocResponse;
+import org.jointheleague.level7.giraffe2.repository.dto.DNDResponse;
 
 import org.springframework.stereotype.Service;
 
@@ -16,8 +18,12 @@ public class LocService {
     }
 
     public Pojo getResults(String query){
-        LocResponse response = locRepository.getResults(query);
-        System.out.println(response.getResults());
+        DNDResponse response = null;
+        try {
+            response = locRepository.getResults(query);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
         return new Pojo (response);
     }
 

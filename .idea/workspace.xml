@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39518dca-b862-4c16-ba00-f3cb90396eee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/7.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/domain/Pojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/domain/Pojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/LocRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/LocRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/LocResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/repository/dto/LocResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/service/LocService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/org/jointheleague/level7/giraffe2/service/LocService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe-Search-2/src/main/java/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="39518dca-b862-4c16-ba00-f3cb90396eee" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,8 +126,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.Giraffe-Search-2 [dependencies]" />
       <item itemvalue="Application.GiraffeSearchApplication" />
+      <item itemvalue="Gradle.Giraffe-Search-2 [dependencies]" />
     </list>
     <recent_temporary>
       <list>
@@ -151,7 +139,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7680b341-04af-42f0-9286-236671b39bcc" name="Changes" comment="" />
+      <changelist id="39518dca-b862-4c16-ba00-f3cb90396eee" name="Changes" comment="" />
       <created>1648688068403</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

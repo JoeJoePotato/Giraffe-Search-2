@@ -20,8 +20,8 @@ public class Pojo {
                 '}';
     }
 
-    public Pojo(LocResponse response) {
-     DNDResponse result = response.getResults();
+    public Pojo(DNDResponse result) {
+
         title = compileTitle(result);
         subtitle = compileSubtitle(result);
         bodyText = compileBodyText(result);
