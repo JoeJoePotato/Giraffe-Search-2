@@ -1,12 +1,17 @@
 package org.jointheleague.level7.giraffe2.repository;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.tomcat.util.json.JSONParser;
+import org.apache.tomcat.util.json.ParseException;
 import org.jointheleague.level7.giraffe2.repository.dto.DNDResponse;
 import org.jointheleague.level7.giraffe2.repository.dto.LocResponse;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import java.util.List;
 import java.util.Locale;
 
 @Repository
@@ -40,8 +45,17 @@ public class LocRepository {
         System.out.println(s);
 
 
+/*DNDResponse r =new DNDResponse();
+     JSONParser parser = new JSONParser(s);
 
-        DNDResponse r=(DNDResponse)mapper.readValues(s, DNDResponse.class);
+     try {
+         r = (DNDResponse) parser.parse();
+     } catch(ParseException e) {
+         e.printStackTrace();
+     }
+*/
+
+       DNDResponse r=mapper.readValue(s, DNDResponse.class);
         /*= webClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(extra)

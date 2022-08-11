@@ -13,6 +13,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.jointheleague.level7.giraffe2.repository.dto.Dc;
 import org.jointheleague.level7.giraffe2.repository.dto.Damage;
+import org.jointheleague.api.giraffe.Giraffe.Search.repository.dto.Classes;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -70,11 +71,11 @@ public class DNDResponse {
     @JsonProperty("school")
     private School school;
     @JsonProperty("classes")
-    private List<Class> classes = null;
+    private List<org.jointheleague.api.giraffe.Giraffe.Search.repository.dto.Classes> classes = null;
 
 
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    //@JsonIgnore
+    //private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     //custom variables
     private String title;
@@ -267,12 +268,12 @@ public class DNDResponse {
     }
 
     @JsonProperty("classes")
-    public List<Class> getClasses() {
+    public List<Classes> getClasses() {
         return classes;
     }
 
     @JsonProperty("classes")
-    public void setClasses(List<Class> classes) {
+    public void setClasses(List<Classes> classes) {
         this.classes = classes;
     }
 
@@ -286,7 +287,7 @@ public class DNDResponse {
         this.url = url;
     }
 
-    @JsonAnyGetter
+   /* @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties () {
         return this.additionalProperties;
     }
@@ -295,4 +296,5 @@ public class DNDResponse {
     public void setAdditionalProperty (String name, Object value){
         this.additionalProperties.put(name, value);
     }
+    */
 }
