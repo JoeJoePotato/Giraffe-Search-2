@@ -5,6 +5,7 @@ import org.jointheleague.level7.giraffe2.repository.dto.LocResponse;
 
 import java.util.List;
 
+
 public class Pojo {
 
     String title;
